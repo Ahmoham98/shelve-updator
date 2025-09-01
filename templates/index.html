@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg">
+            <div class="card-body text-center p-5">
+                <div class="mb-4">
+                    <i class="fas fa-boxes text-primary" style="font-size: 4rem;"></i>
+                </div>
+                <h1 class="card-title mb-3">به بروزرسان قفسه‌های بسلام خوش آمدید</h1>
+                <p class="card-text text-muted mb-4">
+                    قفسه‌های بسلام خود را مدیریت کنید و اطلاعات محصولات را به صورت کارآمد بروزرسانی کنید. 
+                    توضیحات و تصاویر همه محصولات قفسه‌هایتان را تنها با چند کلیک بروزرسانی کنید.
+                </p>
+                
+                <div id="auth-section">
+                    <!-- Authentication status will be loaded here -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-4">
+                                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-shield text-info mb-3" style="font-size: 2rem;"></i>
+                            <h5>احراز هویت امن</h5>
+                            <p class="text-muted">با استفاده از OAuth 2.0 به صورت امن به حساب بسلام خود متصل شوید</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-edit text-warning mb-3" style="font-size: 2rem;"></i>
+                            <h5>بروزرسانی دسته‌ای</h5>
+                            <p class="text-muted">توضیحات و تصاویر همه محصولات یک قفسه را یکجا بروزرسانی کنید</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line text-success mb-3" style="font-size: 2rem;"></i>
+                            <h5>بررسی تغییرات</h5>
+                            <p class="text-muted">دقیقاً ببینید چه چیزی بروزرسانی شده و تغییرات خود را پیگیری کنید</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: basalam-shelves-updater
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port 8000"
+    envVars:
+      # These will be explicitly set in the Render dashboard, but listed here for reference.
+      # They will be fetched from your .env file locally.
+      - key: BASALAM_CLIENT_ID
+        sync: false
+      - key: BASALAM_CLIENT_SECRET
+        sync: false
+      - key: APP_NAME
+        sync: false
+      - key: BASALAM_REDIRECT_URI
+        sync: false # This will be updated after deployment with the Render-provided URL
+      - key: BASALAM_SCOPE
+        sync: false
